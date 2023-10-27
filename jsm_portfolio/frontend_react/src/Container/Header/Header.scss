@@ -1,0 +1,118 @@
+// .hero-section {
+//     background-image: url('./your-background-image.jpg'); // Correct the path to your background image
+//     background-size: cover;
+//     background-position: center;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+
+//     .hero-content {
+//       background-color: rgba(0, 0, 0, 0.6);
+//       color: var(--secondary-color); // Use the secondary color defined in your project
+
+//       padding: 20px;
+//       border-radius: 10px;
+//     }
+
+//     .hero-heading {
+//       font-size: 2rem;
+//       font-weight: bold;
+//       margin: 0;
+//       line-height: 1.2;
+
+//       @media screen and (min-width: 768px) {
+//         font-size: 3rem;
+//       }
+//     }
+
+//     .hero-subheading {
+//       font-size: 1rem;
+//       margin-top: 20px;
+
+//       @media screen and (min-width: 768px) {
+//         font-size: 1.2rem;
+//       }
+//     }
+//   }
+
+// Header.scss
+// .app__header {
+//   width: 100%;
+//   height: calc(100vh - 50px); // Adjust based on the height of your Navbar
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: url(); // Replace with your background image
+//   background-size: cover;
+
+//   .app__header-content {
+//     text-align: center;
+
+//     h1 {
+//       color: var(--white-color);
+//       font-size: 2rem;
+//       margin-bottom: 1rem;
+//     }
+
+//     p {
+//       color: var(--gray-color);
+//     }
+//   }
+// }
+
+// Header.scss
+
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+.app__header {
+  width: 100%;
+  height: 100vh; // This will make the header take up exactly the viewport height
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: url("../../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  .app__header-content {
+    text-align: center;
+
+    h1 {
+      color: var(--secondary-color);
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      font-family: Koulen;
+    }
+
+    h3 {
+      color: #300029;
+      // font-size: 1rem;
+      font-family: Koulen;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .app__header-content {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .app__header-content {
+      h1 {
+        font-size: 1.25rem;
+      }
+
+      h3 {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
