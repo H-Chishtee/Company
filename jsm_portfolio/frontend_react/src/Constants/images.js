@@ -45,7 +45,7 @@ import WebDev from "../assets/WebDevelopement.jpg";
 import AppDev from "../assets/AppDevelopment.jpg";
 import DataEng from "../assets/DataEngineering.jpg";
 import SEO from "../assets/SEO.jpg";
-import Black_logo from "../assets/Black logo - no background.png";
+
 export default {
   Client1,
   Client2,
@@ -58,7 +58,6 @@ export default {
   DataEng,
   SEO,
   hero,
-  Black_logo,
   email,
   mobile,
   api,

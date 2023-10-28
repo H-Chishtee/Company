@@ -1,69 +1,3 @@
-// .hero-section {
-//     background-image: url('./your-background-image.jpg'); // Correct the path to your background image
-//     background-size: cover;
-//     background-position: center;
-//     height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     text-align: center;
-
-//     .hero-content {
-//       background-color: rgba(0, 0, 0, 0.6);
-//       color: var(--secondary-color); // Use the secondary color defined in your project
-
-//       padding: 20px;
-//       border-radius: 10px;
-//     }
-
-//     .hero-heading {
-//       font-size: 2rem;
-//       font-weight: bold;
-//       margin: 0;
-//       line-height: 1.2;
-
-//       @media screen and (min-width: 768px) {
-//         font-size: 3rem;
-//       }
-//     }
-
-//     .hero-subheading {
-//       font-size: 1rem;
-//       margin-top: 20px;
-
-//       @media screen and (min-width: 768px) {
-//         font-size: 1.2rem;
-//       }
-//     }
-//   }
-
-// Header.scss
-// .app__header {
-//   width: 100%;
-//   height: calc(100vh - 50px); // Adjust based on the height of your Navbar
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background: url(); // Replace with your background image
-//   background-size: cover;
-
-//   .app__header-content {
-//     text-align: center;
-
-//     h1 {
-//       color: var(--white-color);
-//       font-size: 2rem;
-//       margin-bottom: 1rem;
-//     }
-
-//     p {
-//       color: var(--gray-color);
-//     }
-//   }
-// }
-
-// Header.scss
-
 @import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 .app__header {
   width: 100%;
@@ -77,12 +11,16 @@
   background-position: center;
   .app__header-content {
     text-align: center;
-
     h1 {
+      //width: 75%;
+      //padding: 0;
+      text-align: start;
       color: var(--secondary-color);
-      font-size: 3rem;
-      margin-bottom: 2rem;
+      //margin: 0 0 50px;
+      background: transparent;
+      font-size: 4.5rem;
       font-family: Koulen;
+      max-width: 500px;
     }
 
     h3 {
@@ -115,4 +53,41 @@
       }
     }
   }
+}
+// #764b8e #9775aa .button {
+//   padding: 10px 20px;
+//   border-radius: 100px;
+//   width: 30%;
+//   border: 1px solid #764b8e; /* Button border color */
+//   background-color: #764b8e; /* Button background color */
+//   color: #fff; /* Text color */
+//   text-decoration: none; /* Remove underline if used as a link */
+//   display: inline-block;
+//   cursor: pointer;
+//   transition: background-color 0.3s, border 0.3s;
+// }
+
+// .button:hover {
+//   background-color: #9775aa; /* Button background color on hover */
+//   border: 1px solid #9775aa; /* Button border color on hover */
+// }
+
+// .button:active {
+//   background-color: #00408a; /* Button background color when active (clicked) */
+//   border: 1px solid #00408a; /* Button border color when active (clicked) */
+// }
+
+.btn-primary {
+  border-radius: 100px;
+  border: 1px solid #764b8e;
+  background-color: #764b8e;
+}
+
+.btn-primary:hover {
+  background-color: #9775aa;
+  border: 1px solid #9775aa;
+}
+.btn-primary:active {
+  background-color: #9775aa; /* Button background color when active (clicked) */
+  border: 1px solid #9775aa; /* Button border color when active (clicked) */
 }

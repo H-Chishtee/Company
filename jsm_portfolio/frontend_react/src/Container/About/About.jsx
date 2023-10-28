@@ -1,21 +1,10 @@
 import React from "react";
-//import { motion } from "framer-motion";
-// import React from "react";
 import { images } from "../../Constants";
-
 import "./About.scss";
 
 const About = () => {
-  // const [abouts, setAbouts] = useState([]);
-
-  // useEffect(() => {
-  //   const query = '*[_type == "abouts"]';
-
-  //   client.fetch(query).then((data) => setAbouts(data));
-  // }, []);
-
   return (
-    <div id="about" className="container">
+    <div id="Who we are" className="container">
       <div className="head-text">
         <h2>
           Why <span>PROJJEXX?</span>
@@ -24,42 +13,6 @@ const About = () => {
       <hr />
       <div className="bottom">
         <div className="primary">
-          <div className="container">
-            <div className="row">
-              <div className="col-6">
-                <h4>supreme talent, at a fraction of the price</h4>
-                <p>
-                  We have built a team of developers and engineers in the world
-                  to solve even the most complex of problems. Our Expertise is
-                  unrivalled
-                </p>
-              </div>
-              <div className="col-6 image">
-                <img src={images.team01} alt="image" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="secondary">
-          <div className="container">
-            <div className="row">
-              <div className="col-6 image1">
-                <img src={images.team03} alt="image" />
-              </div>
-              <div className="col-6">
-                <h4>We believed in building lifelong relationships</h4>
-                <p>
-                  we aim to equip you to handle the inevitable ups & downs not
-                  just now but forever. our approach to business prioritises
-                  you. your vision, your goals. we want you to succeed so we can
-                  continue to help you grow. we're with you in person, on the
-                  phone or online 24/7
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="secondary">
           <div className="container">
             <div className="row">
               <div className="col-6">
@@ -73,7 +26,43 @@ const About = () => {
                 </p>
               </div>
               <div className="col-6 image">
-                <img src={images.team02} alt="image" />
+                <img src={images.team01} alt="Team" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="secondary">
+          <div className="container">
+            <div className="row">
+              <div className="col-6 image">
+                <img src={images.team03} alt="Team" />
+              </div>
+              <div className="col-6">
+                <h4>supreme talent, at a fraction of the price</h4>
+                <p>
+                  We have built a team of developers and engineers in the world
+                  to solve even the most complex of problems. Our Expertise is
+                  unrivalled
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="secondary">
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <h4>We Believe in building lifelong relationships</h4>
+                <p>
+                  We aim to equip you to handle the inevitable ups & downs not
+                  just now but forever. our Approach to business prioritises
+                  you. your vision, your goals. we want you to succees so we can
+                  continue to help you grow. we're with you in person, on the
+                  phone or online 24/7
+                </p>
+              </div>
+              <div className="col-6 image">
+                <img src={images.team02} alt="Team" />
               </div>
             </div>
           </div>

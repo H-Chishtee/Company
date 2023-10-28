@@ -17,7 +17,14 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  .phone-icon {
+    font-size: 24px;
+    //margin-right: 10px;
+  }
 
+  .rotated {
+    transform: rotate(-360deg); /* Rotate the icon by 180 degrees */
+  }
   img {
     height: 40px;
     width: 130px;

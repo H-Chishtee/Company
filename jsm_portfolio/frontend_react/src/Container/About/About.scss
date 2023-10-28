@@ -67,3 +67,10 @@
     width: 60%;
   }
 }
+
+.col-6 h4 {
+  //font-size: 3.5rem;
+  @media screen and (min-width: 1024px) {
+    font-size: 3.5rem;
+  }
+}
