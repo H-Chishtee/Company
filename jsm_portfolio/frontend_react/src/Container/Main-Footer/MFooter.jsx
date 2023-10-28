@@ -4,18 +4,14 @@ import { images } from "../../Constants";
 
 const MFooter = () => {
   return (
-    <div className="footer">
+    <div className="Mfooter">
       <div className="sb__footer section__padding">
         <div className="sb__footer-links">
           <div className="sb__footer-links_div">
             <img src={images.logo} alt="logo" />
             {/* <h4>For Business</h4> */}
             <a href="/employer">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                eveniet explicabo consequatur dicta dolorem facere veniam saepe
-                nihil aliquam illo.
-              </p>
+              <p>PROJJEXX LTD, 2023. Born in London, raised globally.</p>
             </a>
             {/* <a href="/healthplan">
               <p>Health plan</p>

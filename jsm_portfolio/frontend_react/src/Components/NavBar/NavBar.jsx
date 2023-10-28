@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { FaPhone } from "react-icons/fa";
 import "./NavBar.scss";
 import { images } from "../../Constants";
 const NavBar = () => {
@@ -15,20 +16,28 @@ const NavBar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.Black_logo} alt="logo" />
+        <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "industry", "contact"].map((item) => (
-          <li
-            className="app__flex p-text"
-            key={`link-${item}`}
-            onClick={() => handleScrollToSection(item)}
-          >
-            <div />
-            <a href={`#${item}`}>{item}</a>
-          </li>
-        ))}
+        {["home", "Who we are", "What we do", "industry", "contact"].map(
+          (item) => (
+            <li
+              className="app__flex p-text"
+              key={`link-${item}`}
+              onClick={() => handleScrollToSection(item)}
+            >
+              <div />
+              <a href={`#${item}`}>{item}</a>
+            </li>
+          )
+        )}
       </ul>
+      <div className="app__navbar-logo">
+        <FaPhone className="phone-icon rotated" />
+        <a href="tel:+44 7821 949281" className="p-text">
+          +44 7821 949281
+        </a>
+      </div>
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
@@ -38,13 +47,15 @@ const NavBar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul className="app__navbar-links">
-              {["home", "about", "work", "skills", "contact"].map((item) => (
-                <li key={{ item }}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {["home", "Who we are", "work", "skills", "contact"].map(
+                (item) => (
+                  <li key={{ item }}>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}
