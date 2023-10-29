@@ -26,7 +26,6 @@
     transform: rotate(-360deg); /* Rotate the icon by 180 degrees */
   }
   img {
-    height: 40px;
     width: 130px;
     @media screen and (min-width: 2000px) {
       height: 20px;
@@ -163,13 +162,21 @@
     display: none;
   }
 }
-
+.p-textt{
+  display: contents;
+}
+svg{
+  color: black;
+}
 
 @media screen and (max-width: 430px) {
   .cell{
     margin-left: 112px;
   }
   .p-textt{
+    display: contents;
+  }
+  .cellnum{
     display: none;
   }
   
