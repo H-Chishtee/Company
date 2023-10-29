@@ -27,6 +27,7 @@
       color: #300029;
       // font-size: 1rem;
       font-family: Koulen;
+      margin-top: 60px;
     }
   }
 
@@ -46,6 +47,7 @@
     .app__header-content {
       h1 {
         font-size: 1.25rem;
+        width: 65%;
       }
 
       h3 {
@@ -91,6 +93,13 @@
   background-color: #9775aa; /* Button background color when active (clicked) */
   border: 1px solid #9775aa; /* Button border color when active (clicked) */
 }
-.header-a{
+.header-a {
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .app__header .app__header-content h3 {
+    color: #300029;
+    font-family: Koulen;
+    margin-top: 0;
+  }
 }
