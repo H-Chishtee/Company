@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className="secondary">
           <div className="container">
-            <div className="row">
+            <div className="row rev">
               <div className="col-6 image">
                 <img src={images.team03} alt="Team" />
               </div>

@@ -78,3 +78,10 @@
 .desc{
   display: block !important;
 }
+
+@media screen and (max-width: 430px) {
+  .rev{
+    flex-direction: column-reverse;
+  }
+  
+}
