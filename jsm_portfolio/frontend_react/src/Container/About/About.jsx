@@ -15,7 +15,7 @@ const About = () => {
         <div className="primary">
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6  desc">
                 <h4>Global Outreach</h4>
                 <p>
                   We are based in london and proud to be a part of a thriving
@@ -37,7 +37,7 @@ const About = () => {
               <div className="col-6 image">
                 <img src={images.team03} alt="Team" />
               </div>
-              <div className="col-6">
+              <div className="col-6 desc">
                 <h4>supreme talent, at a fraction of the price</h4>
                 <p>
                   We have built a team of developers and engineers in the world
@@ -51,7 +51,7 @@ const About = () => {
         <div className="secondary">
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 desc">
                 <h4>We Believe in building lifelong relationships</h4>
                 <p>
                   We aim to equip you to handle the inevitable ups & downs not
