@@ -15,8 +15,14 @@
   //background-color: #000000;
   //margin-top: 40px;
   border-bottom: 2px solid white;
+  margin-top: 51px;
 }
 
+
+.col-6{
+  justify-content: center;
+  display: flex;
+}
 .app__footer-cards {
   width: 60%;
   display: flex;
@@ -24,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  margin: 4em 2rem 2rem;
+  margin: 0em 2rem 2rem;
 
   .app__footer-card {
     min-width: 290px;
@@ -96,7 +102,7 @@
 
     input,
     textarea {
-      width: 100%;
+      max-width: 236px;
       padding: 0.95rem;
       border: none;
       border-radius: 7px;
@@ -108,7 +114,7 @@
     }
 
     textarea {
-      height: 170px;
+      height: 231px;
     }
   }
   inputfield {
@@ -137,11 +143,22 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 430px) {
     width: 100%;
-    margin: 1rem 0;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .app__footer-form div input, .app__footer-form div textarea {
+    max-width: 140px;
+  }
+  // .moto {
+  //   margin-top: -201px !important;
+  // }
+ 
+}
+ 
+
 
 .footer {
   display: flex;
@@ -176,4 +193,32 @@ hr {
   h3 {
     color: white;
   }
+}
+.head{
+  color:  var(--secondary-color);
+  font-weight: 1000;
+}
+// .moto{
+//   margin-top: -120px;
+// }
+
+@media screen and (max-width: 430px) {
+
+  .moto{
+    margin-top: 0px;
+  }
+  .footer{
+    display: block;
+  }
+  .col-6{
+    width: auto;
+  }
+  .app__footer-form div input, .app__footer-form div textarea {
+    max-width: 127px;
+}
+
+.wrapper{
+  margin: -3rem 0 !important;
+}
+
 }

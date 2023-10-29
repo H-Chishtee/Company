@@ -44,8 +44,8 @@ const Footer = () => {
         </h2>
       </div>
 
-      <div className="footer">
-        <div className="col-6">
+      <div className="footer row">
+        <div className="col-6 moto">
           <div className="app__footer-cards">
             {/* <div className="app__footer-card ">
             <img src={images.email} alt="email" />
@@ -55,7 +55,7 @@ const Footer = () => {
           </div> */}
             <div>
               <p>
-                We’d Make a Killer Team! Let’s work together to build something
+                <p className="head">We’d Make a Killer Team! </p> Let’s work together to build something
                 special. Let us introduce you to the best services, innovations
                 and get you the results you need. We can’t wait
                 to hear from you!

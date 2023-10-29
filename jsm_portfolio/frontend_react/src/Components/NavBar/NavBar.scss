@@ -163,3 +163,14 @@
     display: none;
   }
 }
+
+
+@media screen and (max-width: 430px) {
+  .cell{
+    margin-left: 112px;
+  }
+  .p-textt{
+    display: none;
+  }
+  
+}

@@ -11,7 +11,7 @@ const Header = () => {
                 TRANSFORM YOUR BUSINESS WITH THE BEST TALENT ON THE MARKET
               </h1>
             </div>
-            <div className="col-6">
+            <div className="col-6  header-a">
               <h3>
                 OUR INNOVATIVE SOLUTIONS UTILISE CUTTING-EDGE SOFTWARE, TAKING
                 YOUR BUSINESS TO THE NEXT LEVEL.

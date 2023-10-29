@@ -32,9 +32,9 @@ const NavBar = () => {
           )
         )}
       </ul>
-      <div className="app__navbar-logo">
+      <div className="app__navbar-logo cell">
         <FaPhone className="phone-icon rotated" />
-        <a href="tel:+44 7821 949281" className="p-text">
+        <a href="tel:+44 7821 949281" className="p-textt">
           +44 7821 949281
         </a>
       </div>
