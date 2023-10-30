@@ -35,6 +35,9 @@ const Work = () => {
         What We <span>Do</span>
       </h2> */}
 
+      <h2>
+        Our <span className="gg"> Services </span>
+      </h2>
       <motion.div className="app__work-portfolio">
         {work.map((workItem, index) => (
           <div className="app__work-item app__flex" key={index}>

@@ -19,7 +19,7 @@ const NavBar = () => {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "Who we are", "What we do", "industry", "contact"].map(
+        {["home", "Who we are", "What we do", "industries", "contact"].map(
           (item) => (
             <li
               className="app__flex p-text"
@@ -34,8 +34,8 @@ const NavBar = () => {
       </ul>
       <div className="app__navbar-logo cell">
         <a href="tel:+44 7821 949281" className="p-textt">
-        <FaPhone className="phone-icon rotated" />
-         <div className="cellnum">+44 7821 949281</div> 
+          <FaPhone className="phone-icon rotated" />
+          <div className="cellnum">+44 7821 949281</div>
         </a>
       </div>
       <div className="app__navbar-menu">
@@ -47,15 +47,19 @@ const NavBar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul className="app__navbar-links">
-              {["home", "Who we are", "work", "skills", "contact"].map(
-                (item) => (
-                  <li key={{ item }}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "home",
+                "Who we are",
+                "What we do",
+                "industries",
+                "contact",
+              ].map((item) => (
+                <li key={{ item }}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}
