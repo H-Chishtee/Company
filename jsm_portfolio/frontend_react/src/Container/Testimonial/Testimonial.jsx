@@ -60,6 +60,7 @@ const Testimonial = () => {
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                   </div>
                 </div>
               </div>

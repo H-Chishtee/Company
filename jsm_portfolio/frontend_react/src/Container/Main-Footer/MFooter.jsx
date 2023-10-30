@@ -8,7 +8,7 @@ const MFooter = () => {
       <div className="sb__footer section__padding">
         <div className="sb__footer-links">
           <div className="sb__footer-links_div">
-            <img src={images.logo} alt="logo" />
+            <img src={images.logoo} alt="logo" />
             {/* <h4>For Business</h4> */}
             <a href="/employer">
               <p>PROJJEXX LTD, 2023. Born in London, raised globally.</p>
@@ -92,7 +92,9 @@ const MFooter = () => {
           <hr></hr>
           <div className="sb__footer-below">
             <div className="sb__footer-copyright">
-              <p>@{new Date().getFullYear()} Projjexx. All right reserved.</p>
+              <p>
+                @{new Date().getFullYear()} PROJJEXX LTD. All right reserved.
+              </p>
             </div>
           </div>
           <div className="sb__footer-below-links">
