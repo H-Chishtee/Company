@@ -20,7 +20,7 @@ const MFooter = () => {
               <p>Individual</p>
             </a> */}
           </div>
-          <div className="sb__footer-links_div">
+          {/* <div className="sb__footer-links_div">
             <h4>Resources</h4>
             <a href="/resources">
               <p>Resources center</p>
@@ -31,23 +31,23 @@ const MFooter = () => {
             <a href="/resources">
               <p>STV</p>
             </a>
-          </div>
+          </div> */}
           <div className="sb__footer-links_div">
             <h4>Company</h4>
-            <a href="/about">
+            <a href="#Who we are">
               <p>About</p>
             </a>
-            <a href="/press">
+            {/* <a href="/press">
               <p>Press</p>
             </a>
             <a href="/career">
               <p>Career</p>
-            </a>
+            </a> */}
           </div>
           <div className="sb__footer-links_div">
-            <h4>Coming soon on</h4>
+            <h4>Social Links</h4>
             <div className="socialmedia">
-              <a
+              {/* <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,21 +60,21 @@ const MFooter = () => {
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-twitter"></i>
-              </a>
+              </a> */}
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/projjexx/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-linkedin"></i>
               </a>
-              <a
+              {/* <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fa fa-instagram"></i>
-              </a>
+              </a> */}
               {/* <p>
                 <img src="" alt="Facebook" />
               </p> */}
