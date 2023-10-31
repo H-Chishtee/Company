@@ -23,7 +23,8 @@
   }
 
   .rotated {
-    transform: rotate(-360deg); /* Rotate the icon by 180 degrees */
+    transform: rotate(-360deg);
+    color: white; /* Rotate the icon by 180 degrees */
   }
   img {
     width: 130px;
@@ -191,18 +192,22 @@ svg {
   display: flex;
   justify-content: center;
   /* margin-top: 40px; */
-  border-radius: 20px;
+  border-radius: 30px;
   border: 0;
   box-shadow: none;
-  width: 150px;
-  height: 36px;
+  width: 155px;
+  height: 45px;
   font-size: 14px;
   /* line-height: 35px; */
   text-align: center;
   font-weight: bold;
   /* font-family: "Montserrat", sans-serif; */
-  color: #fff;
-  background: linear-gradient(to right, #03cb91 0%, #00add8 100%);
+  color: white;
+  background-color: #764b8e;
+  // background: linear-gradient(to right, #03cb91 0%, #00add8 100%);
+}
+.cellnum{
+  color: white;
 }
 
 @media screen and (max-width: 320px) {
