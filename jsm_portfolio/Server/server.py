@@ -1,14 +1,13 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+import os
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-
-
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
@@ -19,16 +18,17 @@ def send_email():
     phone = data['phone']
     message = data['message']
 
-    from_email = 'your-email@gmail.com'
-    to_email = 'm.hasanzubair01@gmail.com'
-    password = 'aifh dkxi xxbj ieqm'
+    # Get these from environment variables for security
+    from_email = os.environ.get('FROM_EMAIL', 'm.hasanzubair01@gmail.com') 
+    to_email = 'm.hasanzubair01@gmail.com' 
+    password = os.environ.get('EMAIL_PASSWORD', 'aifh dkxi xxbj ieqm') 
 
     subject = 'New Contact Form Submission'
 
     msg = MIMEMultipart()
-    msg['From'] = "your-email@gmail.com"
-    msg['To'] = "m.hasanzubair01@gmail.com"
-    msg['Subject'] =  "New Contact Form Submission"
+    msg['From'] = from_email
+    msg['To'] = to_email
+    msg['Subject'] = subject
 
     body = f"Name: {name}\nEmail: {email}\nCountry: {country}\nPhone: {phone}\nMessage: {message}"
     msg.attach(MIMEText(body, 'plain'))
@@ -36,7 +36,7 @@ def send_email():
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
-        server.login('m.hasanzubair01@gmail.com', 'aifh dkxi xxbj ieqm')
+        server.login(from_email, password)  # Use the from_email here
         server.sendmail(from_email, to_email, msg.as_string())
         server.quit()
         return 'Email sent', 200
