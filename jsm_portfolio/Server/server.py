@@ -6,7 +6,9 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "https://www.projjexx.com/", "methods": ["GET", "POST"], "allow_headers": ["Authorization"]}})
+
+
 
 @app.route('/send-email', methods=['POST'])
 def send_email():
