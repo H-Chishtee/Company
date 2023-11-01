@@ -1,5 +1,0 @@
-Flask
-Flask-CORS
-smtplib
-email.mime.text.MIMEText 
-email.mime.multipart.MIMEMultipart
