@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { images } from "../../Constants";
 import "./Footer.scss";
 import axios from "axios";
 const Footer = () => {
@@ -20,10 +19,13 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  const api = axios.create({
+    baseURL: "http://localhost:5000", // Set your API URL here
+  });
   const handleSubmit = () => {
     setLoading(true);
 
-    axios
+    api
       .post("/send-email", formData)
       .then((response) => {
         setLoading(false);
@@ -55,10 +57,10 @@ const Footer = () => {
           </div> */}
             <div>
               <p>
-                <p className="head">We’d Make a Killer Team! </p> Let’s work together to build something
-                special. Let us introduce you to the best services, innovations
-                and get you the results you need. We can’t wait
-                to hear from you!
+                <p className="head">We’d Make a Killer Team! </p> Let’s work
+                together to build something special. Let us introduce you to the
+                best services, innovations and get you the results you need. We
+                can’t wait to hear from you!
               </p>
             </div>
           </div>
