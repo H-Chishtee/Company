@@ -202,3 +202,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@media screen and (max-width: 320px) {
+  .slick-slider {
+    width: 71%;
+    
+  }
+  .app__testimonial-content {
+    // font-size: 0.5rem;
+    .p-text{
+      font-size: 0.75rem;
+    }
+
+  .icon {
+    font-size: 30px;
+  }
+  }
+
+}
